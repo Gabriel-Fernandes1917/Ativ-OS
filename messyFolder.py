@@ -10,10 +10,17 @@ def createFolders():
 
     for i in range(len(files)):
         x = files[i].split(".")
-        typesFiles.append(x[-1])
+
+        for i in range(len(files)):
+            
+            if i != x[-1]:
+                typesFiles.append(x[-1])
     
 
     print(typesFiles)
+
+    # for i in range(len(files)):
+
 
 
 createFolders()
